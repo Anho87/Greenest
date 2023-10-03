@@ -2,7 +2,7 @@ public abstract class Plant {
 
     private String name;
     protected double heightInCentimeters;
-    
+
 
     public Plant(String name, double heightInCentimeters) {
         this.name = name;
@@ -12,14 +12,13 @@ public abstract class Plant {
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
     public double getHeightInCentimeters() {
         return heightInCentimeters;
     }
+
     abstract void setHeightInCentimeters(double heightInCentimeters);
+
     abstract String printToTextArea();
+
     abstract TypeOfPlant getTypeOfPlant();
 }

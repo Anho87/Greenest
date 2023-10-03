@@ -10,18 +10,22 @@ public class MeatEatingPlant extends Plant implements Nutrition {
         super(name, heightInCentimeters);
         this.nutrition = setNutrition();
     }
-    public String getFormattedNutrition(){
+
+    public String getFormattedNutrition() {
         return String.format("%.2f", nutrition);
     }
-    public String getFormattedHeightInCentimeters(){
+
+    public String getFormattedHeightInCentimeters() {
         return String.format("%.0f", heightInCentimeters);
     }
+
     @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
     }
+
     @Override
-    public void setHeightInCentimeters(double heightInCentimeters){
+    public void setHeightInCentimeters(double heightInCentimeters) {
         this.heightInCentimeters = heightInCentimeters;
         this.nutrition = setNutrition();
     }

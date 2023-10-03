@@ -1,13 +1,13 @@
 
 public class Cactus extends Plant {
 
-    private final String nutrition;
+    private final int nutrition;
 
     protected TypeOfPlant typeOfPlant = TypeOfPlant.CACTUS;
 
     public Cactus(String name,double heightInCentimeters) {
         super(name, heightInCentimeters);
-        nutrition = "2cl mineralvatten/dag";
+        nutrition = 2;
     }
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
@@ -15,7 +15,7 @@ public class Cactus extends Plant {
     public String getFormattedHeightInCentimeters(){
         return String.format("%.0f", heightInCentimeters);
     }
-    public String getNutrition() {
+    public int getNutrition() {
         return nutrition;
     }
     @Override
@@ -27,6 +27,6 @@ public class Cactus extends Plant {
     public String printToTextArea() {
         return "Typ: " + getTypeOfPlant().typeOfPlant +
                 "\nNamn: " + getName() + "\n" + "Höjd: " + getFormattedHeightInCentimeters() + "cm\n" + "Näring: " +
-                getNutrition();
+                getNutrition() + "cl mineralvatten/dag";
     }
 }

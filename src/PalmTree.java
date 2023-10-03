@@ -9,7 +9,8 @@ public class PalmTree extends Plant implements Nutrition {
         super(name, heightInCentimeters);
         this.nutrition = setNutrition();
     }
-    public String getFormattedHeightInCentimeters(){
+
+    public String getFormattedHeightInCentimeters() {
         return String.format("%.0f", heightInCentimeters);
     }
 
@@ -18,10 +19,11 @@ public class PalmTree extends Plant implements Nutrition {
     }
 
     @Override
-    public void setHeightInCentimeters(double heightInCentimeters){
+    public void setHeightInCentimeters(double heightInCentimeters) {
         this.heightInCentimeters = heightInCentimeters;
         this.nutrition = setNutrition();
     }
+
     @Override
     public double setNutrition() {
         return (getHeightInCentimeters() / 100) * 0.5;
@@ -31,8 +33,9 @@ public class PalmTree extends Plant implements Nutrition {
     public double getNutrition() {
         return nutrition;
     }
+
     @Override
-    public String printToTextArea(){
+    public String printToTextArea() {
         return "Typ: " + getTypeOfPlant().typeOfPlant +
                 "\nNamn: " + getName() + "\n" + "Höjd: " + getFormattedHeightInCentimeters() + "cm\n" + "Näring: " +
                 getNutrition() + " liter kranvatten/dag";

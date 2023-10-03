@@ -1,28 +1,22 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 
 class PalmTreeTest {
 
-    PalmTree palmTree = new PalmTree("TestPalm", 300);
+    PalmTree palmTest = new PalmTree("Palmis", 300);
 
     @Test
     public final void getterTest() {
-        assert (palmTree.getName() == "TestPalm");
-        assert (palmTree.getHeightInCentimeters() == 300);
-        assert (palmTree.getNutrition() == 1.5);
+        double expectedNutrition = 1.5;
+        double actualNutrition = palmTest.getNutrition();
+        Assertions.assertEquals(expectedNutrition, actualNutrition);
     }
     @Test
     public final void setterTest(){
-        assert (palmTree.getName() == "TestPalm");
-        palmTree.setName("Palmis");
-        assert (palmTree.getName() == "Palmis");
-        
-        assert (palmTree.getHeightInCentimeters() == 300);
-        assert (palmTree.getNutrition() == 1.5);
-        palmTree.setHeightInCentimeters(500);
-        assert (palmTree.getHeightInCentimeters() == 500);
-        assert (palmTree.getNutrition() == 2.5);
+        palmTest.setHeightInCentimeters(500);
+        double expectedNutrition = 2.5;
+        double actualNutrition = palmTest.getNutrition();
+        Assertions.assertEquals(expectedNutrition, actualNutrition);
     }
 }
