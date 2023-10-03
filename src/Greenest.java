@@ -60,13 +60,13 @@ public class Greenest {
         if (result == JOptionPane.OK_OPTION) {
             String type = (String) dropdown.getSelectedItem();
             String name = textField1.getText().trim();
-            name = name.toLowerCase();
-            name = name.substring(0, 1).toUpperCase() + name.substring(1);
             String textfield2String = textField2.getText();
             if (name.isEmpty() || textfield2String.isEmpty()) {
                 JOptionPane.showMessageDialog(null, "Du måste skriva in något i båda rutorna.");
             } else {
                 try {
+                    name = name.toLowerCase();
+                    name = name.substring(0, 1).toUpperCase() + name.substring(1);
                     double height = Double.parseDouble(textfield2String);
                     createPlant(type, name, height, plantList);
                     printToDataFile(type, name, height);
