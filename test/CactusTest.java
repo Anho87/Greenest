@@ -10,12 +10,4 @@ class CactusTest {
         double actualNutrition = kaktusTest.getNutrition();
         Assertions.assertEquals(expectedNutrition, actualNutrition);
     }
-
-    @Test
-    public final void setterTest() {
-        kaktusTest.setHeightInCentimeters(5000);
-        double expectedNutrition = 2;
-        double actualNutrition = kaktusTest.getNutrition();
-        Assertions.assertEquals(expectedNutrition, actualNutrition);
-    }
 }

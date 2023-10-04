@@ -1,10 +1,9 @@
 
 
 public class MeatEatingPlant extends Plant {
-    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
+    //Inkapslade variablar
     private double nutrition;
-
-    protected TypeOfPlant typeOfPlant = TypeOfPlant.MEATEATINGPLANT;
+    private TypeOfPlant typeOfPlant = TypeOfPlant.MEATEATINGPLANT;
 
     public MeatEatingPlant(String name, double heightInCentimeters) {
         super(name, heightInCentimeters);
@@ -16,17 +15,12 @@ public class MeatEatingPlant extends Plant {
     }
 
     public String getFormattedHeightInCentimeters() {
-        return String.format("%.0f", heightInCentimeters);
+        return String.format("%.0f", getHeightInCentimeters());
     }
     //Polymorfism
     @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
-    }
-    @Override
-    public void setHeightInCentimeters(double heightInCentimeters) {
-        this.heightInCentimeters = heightInCentimeters;
-        this.nutrition = setNutrition();
     }
     @Override
     public double setNutrition() {

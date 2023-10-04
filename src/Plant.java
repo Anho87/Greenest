@@ -1,7 +1,7 @@
 public abstract class Plant implements Nutrition{
-    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
+    //Inkapslade variablar
     private String name;
-    protected double heightInCentimeters;
+    private double heightInCentimeters;
     
     public Plant(String name, double heightInCentimeters) {
         this.name = name;
@@ -10,16 +10,11 @@ public abstract class Plant implements Nutrition{
     public String getName() {
         return name;
     }
-    public void setName(String name){
-        this.name = name;
-    }
     public double getHeightInCentimeters() {
         return heightInCentimeters;
     }
     
     //Polymorfism
-    abstract void setHeightInCentimeters(double heightInCentimeters);
-    
     abstract String printToTextArea();
 
     abstract TypeOfPlant getTypeOfPlant();

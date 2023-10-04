@@ -10,12 +10,4 @@ class MeatEatingPlantTest {
         double actualNutrition = köttätareTest.getNutrition();
         Assertions.assertEquals(expectedNutrition, actualNutrition);
     }
-
-    @Test
-    public final void setterTest() {
-        köttätareTest.setHeightInCentimeters(150);
-        double expectedNutrition = 0.4;
-        double actualNutrition = köttätareTest.getNutrition();
-        Assertions.assertEquals(expectedNutrition, actualNutrition);
-    }
 }

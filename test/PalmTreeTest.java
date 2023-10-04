@@ -11,11 +11,4 @@ class PalmTreeTest {
         double actualNutrition = palmTest.getNutrition();
         Assertions.assertEquals(expectedNutrition, actualNutrition);
     }
-    @Test
-    public final void setterTest(){
-        palmTest.setHeightInCentimeters(500);
-        double expectedNutrition = 2.5;
-        double actualNutrition = palmTest.getNutrition();
-        Assertions.assertEquals(expectedNutrition, actualNutrition);
-    }
 }

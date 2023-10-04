@@ -1,16 +1,15 @@
 
 public class Cactus extends Plant {
-    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
-    private final double nutrition;
-
-    protected TypeOfPlant typeOfPlant = TypeOfPlant.CACTUS;
+    //Inkapslade variablar
+    private double nutrition;
+    private TypeOfPlant typeOfPlant = TypeOfPlant.CACTUS;
 
     public Cactus(String name,double heightInCentimeters) {
         super(name, heightInCentimeters);
         nutrition = setNutrition();
     }
     public String getFormattedHeightInCentimeters(){
-        return String.format("%.0f", heightInCentimeters);
+        return String.format("%.0f", getHeightInCentimeters());
     }
     public String getFormattedNutrition() {
         return String.format("%.0f", nutrition);
@@ -28,10 +27,6 @@ public class Cactus extends Plant {
     @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
-    }
-    @Override
-    public void setHeightInCentimeters(double heightInCentimeters){
-        this.heightInCentimeters = heightInCentimeters;
     }
     @Override
     public String printToTextArea() {
