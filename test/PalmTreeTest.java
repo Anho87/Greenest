@@ -1,10 +1,9 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-
 class PalmTreeTest {
 
-    PalmTree palmTest = new PalmTree("Palmis", 300);
+    Plant palmTest = new PalmTree("Palmis", 300);
 
     @Test
     public final void getterTest() {

@@ -1,5 +1,5 @@
 
-public class PalmTree extends Plant implements Nutrition {
+public class PalmTree extends Plant {
     //Inkapslade variablar som man kan ändra med hjälp av getters och setters
     private double nutrition;
 
@@ -9,7 +9,6 @@ public class PalmTree extends Plant implements Nutrition {
         super(name, heightInCentimeters);
         this.nutrition = setNutrition();
     }
-
     public String getFormattedHeightInCentimeters() {
         return String.format("%.0f", heightInCentimeters);
     }
@@ -18,13 +17,11 @@ public class PalmTree extends Plant implements Nutrition {
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
     }
-
     @Override
     public void setHeightInCentimeters(double heightInCentimeters) {
         this.heightInCentimeters = heightInCentimeters;
         this.nutrition = setNutrition();
     }
-
     @Override
     public double setNutrition() {
         return (getHeightInCentimeters() / 100) * 0.5;

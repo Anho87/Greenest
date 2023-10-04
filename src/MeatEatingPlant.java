@@ -1,6 +1,6 @@
 
 
-public class MeatEatingPlant extends Plant implements Nutrition {
+public class MeatEatingPlant extends Plant {
     //Inkapslade variablar som man kan ändra med hjälp av getters och setters
     private double nutrition;
 
@@ -23,23 +23,19 @@ public class MeatEatingPlant extends Plant implements Nutrition {
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
     }
-
     @Override
     public void setHeightInCentimeters(double heightInCentimeters) {
         this.heightInCentimeters = heightInCentimeters;
         this.nutrition = setNutrition();
     }
-
     @Override
     public double setNutrition() {
         return 0.1 + ((getHeightInCentimeters() / 100) * 0.2);
     }
-
     @Override
     public double getNutrition() {
         return nutrition;
     }
-
     @Override
     public String printToTextArea() {
         return "Typ: " + getTypeOfPlant().typeOfPlant +

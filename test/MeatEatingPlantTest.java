@@ -2,8 +2,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 class MeatEatingPlantTest {
-    MeatEatingPlant köttätareTest = new MeatEatingPlant("Köttis", 50);
-
+   Plant köttätareTest = new MeatEatingPlant("Köttis", 50);
+    
     @Test
     public final void getterTest() {
         double expectedNutrition = 0.2;
