@@ -15,7 +15,8 @@ public abstract class Plant {
     public double getHeightInCentimeters() {
         return heightInCentimeters;
     }
-
+    
+    //Polymorfism
     abstract void setHeightInCentimeters(double heightInCentimeters);
 
     abstract String printToTextArea();

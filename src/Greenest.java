@@ -52,7 +52,7 @@ public class Greenest {
         panel.add(dropdown);
         panel.add(new JLabel("Namn: "));
         panel.add(textField1);
-        panel.add(new JLabel("Höjd: "));
+        panel.add(new JLabel("Höjd i cm: "));
         panel.add(textField2);
 
         int result = JOptionPane.showConfirmDialog(null, panel, "Greenest", JOptionPane.OK_CANCEL_OPTION);
@@ -104,6 +104,7 @@ public class Greenest {
         panel.add(exitButton);
         frame.setLocationRelativeTo(null);
         frame.add(panel);
+        frame.setResizable(false);
         frame.setVisible(true);
 
 

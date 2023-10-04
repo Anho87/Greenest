@@ -1,7 +1,7 @@
 
 
 public class MeatEatingPlant extends Plant implements Nutrition {
-
+    //inkapspling
     private double nutrition;
 
     protected TypeOfPlant typeOfPlant = TypeOfPlant.MEATEATINGPLANT;

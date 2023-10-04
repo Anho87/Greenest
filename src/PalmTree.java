@@ -1,6 +1,6 @@
 
 public class PalmTree extends Plant implements Nutrition {
-
+    //inkapspling
     private double nutrition;
 
     protected TypeOfPlant typeOfPlant = TypeOfPlant.PALMTREE;
@@ -13,7 +13,7 @@ public class PalmTree extends Plant implements Nutrition {
     public String getFormattedHeightInCentimeters() {
         return String.format("%.0f", heightInCentimeters);
     }
-
+    @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
     }
