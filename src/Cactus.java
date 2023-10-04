@@ -15,6 +15,7 @@ public class Cactus extends Plant {
     public int getNutrition() {
         return nutrition;
     }
+    //Polymorfism
     @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;

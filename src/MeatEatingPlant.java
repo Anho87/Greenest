@@ -18,7 +18,7 @@ public class MeatEatingPlant extends Plant implements Nutrition {
     public String getFormattedHeightInCentimeters() {
         return String.format("%.0f", heightInCentimeters);
     }
-
+    //Polymorfism
     @Override
     public TypeOfPlant getTypeOfPlant() {
         return typeOfPlant;
