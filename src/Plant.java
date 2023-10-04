@@ -1,5 +1,5 @@
 public abstract class Plant {
-
+    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
     private String name;
     protected double heightInCentimeters;
 

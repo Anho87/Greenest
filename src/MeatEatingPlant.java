@@ -1,7 +1,7 @@
 
 
 public class MeatEatingPlant extends Plant implements Nutrition {
-    //inkapspling
+    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
     private double nutrition;
 
     protected TypeOfPlant typeOfPlant = TypeOfPlant.MEATEATINGPLANT;

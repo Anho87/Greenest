@@ -1,6 +1,6 @@
 
 public class Cactus extends Plant {
-    //inkapspling
+    //Inkapslade variablar som man kan ändra med hjälp av getters och setters
     private final int nutrition;
 
     protected TypeOfPlant typeOfPlant = TypeOfPlant.CACTUS;
